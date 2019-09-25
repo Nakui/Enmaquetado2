@@ -1,49 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">	
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://kit.fontawesome.com/9c74db1b34.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../CSS/index.css"/>
-        <title>Mis Cursos</title>
-    </head>
-    <body>
-        <div class="contenedor">
-                <header class="header">
-                        <div class="header__div--one">    
-                            <i class="fas fa-search" style="position: absolute; right: 0; left: 8.8rem; color: #509c97; "></i>                              
-                            <input type="text" placeholder="Busca estudiantes, padres o maestros aquí..."> 
-                        </div>
-                        <nav class="header__div--two">
-                            <div class="login--one">
-                                <img src="../assets/notificacion.png" alt="" class="notificacion">
-                            </div>
-                            <div class="login--two">
-                                <div class="login-user">
-                                    <img src="../assets/perfil.png" alt="" class="user">
-                                </div>
-                                <div class="login-datos">
-                                    <p class="login-datos--one">Iris Lucrecia</p>
-                                    <p class="login-datos--two">Supervisor</p>
-                                </div>
-                            </div>
-                            <div class="login--three">
-                                <img src="../assets/settings.png" alt="" class="settings">
-                                <img src="../assets/seleccion.png" alt="" class="seleccion">
-                            </div>
-                        </nav>
-                </header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9c74db1b34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/fontello.css" />
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <title>Mis Cursos</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="toogle">
+            <i class="fal fa-paper-plane" style="cursor: pointer; color: white; font-size:28px;"></i>
         </div>
-        <!--<div class="div-one">
-                <div id="resultado1">60</div>
-                <div id="resultado2">50</div>
-                <div id="resultado3">34</div>
-                <div id="resultado4">23</div>
+        <div class="iconos">
+            <i class="fas fa-home" style="cursor: pointer; color: #01928d;"></i>
         </div>
-        <div class="div-two">
-                <div id="resultado4">23</div>
-        </div>-->
-    </body>
+        <div class="iconos">
+            <i class="icon-book" style="cursor: pointer; color: #789494;"></i>
+        </div>
+        <div class="iconos">
+            <i class="icon-calendar-empty" style="cursor: pointer; color: #789494;"></i>
+        </div>
+        <div class="iconos">
+            <i class="fad fa-copy" style="cursor: pointer; color: #789494;"></i>
+        </div>
+        <div class="iconos">
+            <i class="icon-users" style="cursor: pointer; color: #789494;"></i>
+        </div>
+    </div>
+    <div class="contenedor">
+        <header class="header">
+            <div class="header__div--one">
+                <i class="fas fa-search" style="position: absolute; right: 0; left: 26rem; color: #509c97; "></i>
+                <input type="text" placeholder="Busca estudiantes, padres o maestros aquí...">
+            </div>
+            <nav class="header__div--two">
+                <div class="login--one">
+                    <img src="../assets/notificacion.png" alt="" class="notificacion">
+                </div>
+                <hr>
+                <div class="login--two">
+                    <div class="login-user">
+                        <img src="../assets/perfil.png" alt="" class="user">
+                    </div>
+                    <div class="login-datos">
+                        <p class="login-datos--one">Iris Lucrecia</p>
+                        <p class="login-datos--two">Supervisor</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="login--three">
+                    <img src="../assets/settings.png" alt="" class="settings">
+                    <img src="../assets/seleccion.png" alt="" class="seleccion">
+                </div>
+            </nav>
+        </header>
+        <div class="contenedor__div-one" style="color: #01928d; padding: 1.5rem 2.5rem;">
+            <i class="icon-book" style="cursor: pointer;  font-size: 40px;"></i>
+            <h1 class="contenedor__div-one--book" style="font-weight: lighter;">Mis Cursos</h1>
+        </div>
+        <div class="contenedor__div-two">
+            <div class="contenedor__div-two--opciones-one">
+                <label class="opciones__fuerte">Mis Cursos (500)</label>
+            </div>
+            <div class="contenedor__div-two--opciones-two">
+                <p class="opciones__debil" style="color: #b0b0b0;"><b>Supervisados</b>(500)</p>
+            </div>
+            <div class="contenedor__div-two--opciones-two">
+                <p class="opciones__debil" style="color: #b0b0b0;"><b>Supervisados</b>(500)</p>
+            </div>
+        </div>
+</body>
+
 </html>
