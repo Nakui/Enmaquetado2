@@ -1,55 +1,111 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
-}
-
 html {
     font-size: 1rem;
 }
 
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    border-radius: 0.4rem;
+    border: none;
+    color: #8896b8;
+    display: flex;
+    flex: 1;
+    font-size: 12pt;
+    height: 30px;
+    width: auto;
+}
+
+p {
+    font-weight: lighter;
+}
+
+img {
+    cursor: pointer;
+}
+
+hr {
+    background-color: #01a6a1;
+    border: none;
+    height: 2rem;
+    width: 1px;
+}
+
+.sidebar {
+    //padding: 2rem;
+    background: #2d3b3b;
+    display: inline-block;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    vertical-align: middle;
+    width: 50px;
+
+    .toogle {
+        align-items: center;
+        background-color: #01928d;
+        display: flex;
+        height: 47.8px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .iconos {
+        align-items: center;
+        display: flex;
+        height: 47.8px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
 .contenedor {
     display: flex;
+    flex-flow: column;
     margin: auto;
-    flex-flow: row wrap;
+    margin: 0 0 0 3.1rem;
 }
 
 header {
+    //flex-flow: row wrap; //Hace lo de direccion y baja los elelemetos si no caben los elementos
     background-color: #019c97;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     flex-direction: row;
     flex-grow: 1;
-    flex-flow: row wrap; //Hace lo de direccion y baja los elelemetos si no caben los elementos
+    justify-content: space-between;
+    left: 0;
+    right: 0;
 
     .header__div--one {
-        flex-direction: row;
-        background: #995210;
+        align-items: center;
         display: flex;
-        align-items: center;                
+        flex-direction: row;
         width: auto;
+
         input {
-            width: 10rem;                        
-        }
-        i {
-                       
+            margin: 0 0 0 1rem;
+            padding: 0 0 0 1rem;
+            width: 23rem;
         }
     }
 
     .header__div--two>div {
-        flex: auto;
+        margin: 0 0.3rem 0 0.3rem;
     }
 
     .header__div--two {
-        width: 15rem;        
         display: flex;
         flex-direction: row;
+        width: 15rem;
 
         .login--one {
+            //border: 1px solid red;
             align-items: center;
             display: flex;
-
             justify-content: center;
-            border: 1px solid red;
 
             img {
                 height: 20px;
@@ -59,12 +115,11 @@ header {
         .login--two {
             display: flex;
             flex-direction: row;
-            border: 1px solid red;            
+
             .login-user {
                 align-items: center;
                 display: flex;
                 justify-content: center;
-                
 
                 img {
                     height: 45px;
@@ -75,9 +130,9 @@ header {
             .login-datos {
                 display: flex;
                 justify-content: center;
-                flex-direction: column ;
-                text-align: left;                
-                
+                flex-direction: column;
+                text-align: left;
+
                 .login-datos--one {
                     color: white;
                     font-size: 12pt;
@@ -87,16 +142,16 @@ header {
                 .login-datos--two {
                     color: #49d7d3;
                     font-size: 8.85pt;
-                    margin: 0;                    
+                    margin: 0;
                 }
             }
         }
 
         .login--three {
+            //border: 1px solid red;
             align-items: center;
             display: flex;
             justify-content: center;
-            border: 1px solid red;
 
             .settings {
                 height: 15px;
@@ -111,56 +166,27 @@ header {
     }
 }
 
-input {
-    display: flex;
-    flex: 1;
-    border-radius: 0.15rem;
-    color: #8896b8;
-    font-size: 5pt;
-    border: none;
-    width: auto;
-    height: 25px;
-}
-
-p {
-    font-weight: lighter;
-}
-
-img {
-    cursor: pointer;
-}
-
-button {
-    background: transparent;
-}
-
-
-
-
-
-/*.div-one {
-    background-color: #2d3b3b;
-    display: flex;
-    display: inline-block;
-    flex-direction: column;
-    flex: 1;
-    height: auto;
-    justify-content: center;
-    position: absolute;
-    vertical-align: middle;
-    width: auto;
-}
-
-.div-two {
-    background-color: #65801b;
+.contenedor__div-one {
+   // background-color: #347e2e;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: auto;
+    flex-grow: 2;
+    height: auto;
+    align-items: center;
+
+}
+
+.contenedor__div-two {
+//background-color: #7e2e6a;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
     height: 100px;
-    padding: 25px 20px;
-    margin: 25px;
-    display: inline-block;
-    vertical-align: middle;
-    flex-grow: 1;
-}*/
+    align-items: center;
+    border-top: 1px outset #b0b0b0; 
+    .contenedor__div-two--opciones-one {
+        border-bottom: 4px solid #01928d;
+        color: #01928d;
+        //cursor: pointer;
+    }
+}
