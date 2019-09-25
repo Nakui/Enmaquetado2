@@ -1,8 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 html {
@@ -11,7 +9,6 @@ html {
 
 .contenedor {
     display: flex;
-    max-width: 1000px;
     margin: auto;
     flex-flow: row wrap;
 }
@@ -23,72 +20,91 @@ header {
     flex-direction: row;
     flex-grow: 1;
     flex-flow: row wrap; //Hace lo de direccion y baja los elelemetos si no caben los elementos
-    height: 30px;
 
     .header__div--one {
         flex-direction: row;
         background: #995210;
         display: flex;
-        align-items: center;        
+        align-items: center;                
+        width: auto;
+        input {
+            width: 10rem;                        
+        }
+        i {
+                       
+        }
+    }
+
+    .header__div--two>div {
+        flex: auto;
     }
 
     .header__div--two {
-        height: auto;
-        width: auto;
-        background: #0e440c;
+        width: 15rem;        
         display: flex;
-        flex-flow: row wrap;
+        flex-direction: row;
+
         .login--one {
             align-items: center;
-            display: flex;            
-            flex: 0.5;
-            justify-content: center;            
+            display: flex;
+
+            justify-content: center;
             border: 1px solid red;
+
             img {
-                height: 15px;
-            }            
+                height: 20px;
+            }
         }
+
         .login--two {
             display: flex;
-            flex-flow: row wrap;
-            border: 1px solid red;
+            flex-direction: row;
+            border: 1px solid red;            
             .login-user {
                 align-items: center;
-                display: flex;            
-                flex: 1;
-                justify-content: center; 
-                margin: 0 0.2rem 0 0;
+                display: flex;
+                justify-content: center;
+                
+
                 img {
-                    height: 25px;
+                    height: 45px;
+                    margin: 0 0.5rem 0 0.2rem;
                 }
-            }                    
-            .login-datos {                
-                display: flex;                            
-                justify-content: center;  
-                flex-flow: column wrap;
+            }
+
+            .login-datos {
+                display: flex;
+                justify-content: center;
+                flex-direction: column ;
                 text-align: left;                
+                
                 .login-datos--one {
                     color: white;
-                    font-size: 7pt;
+                    font-size: 12pt;
+                    margin: 0;
                 }
+
                 .login-datos--two {
                     color: #49d7d3;
-                    font-size: 5pt;
+                    font-size: 8.85pt;
+                    margin: 0;                    
                 }
             }
         }
+
         .login--three {
             align-items: center;
-            display: flex;            
-            flex: 0.5;
-            justify-content: center;            
+            display: flex;
+            justify-content: center;
             border: 1px solid red;
+
             .settings {
-                height: 10px;
+                height: 15px;
                 margin: 0 0.2rem 0 0.5rem;
             }
+
             .seleccion {
-                height: 4px;
+                height: 6px;
                 margin: 0 0.5rem 0 0;
             }
         }
@@ -97,13 +113,13 @@ header {
 
 input {
     display: flex;
-    flex-grow: 1;
+    flex: 1;
     border-radius: 0.15rem;
     color: #8896b8;
     font-size: 5pt;
     border: none;
     width: auto;
-    height: 15px;
+    height: 25px;
 }
 
 p {
@@ -122,7 +138,7 @@ button {
 
 
 
-.div-one {
+/*.div-one {
     background-color: #2d3b3b;
     display: flex;
     display: inline-block;
@@ -147,4 +163,4 @@ button {
     display: inline-block;
     vertical-align: middle;
     flex-grow: 1;
-}
+}*/
