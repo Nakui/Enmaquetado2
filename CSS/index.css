@@ -1,15 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif; }
+body {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box; }
 
 html {
   font-size: 1rem; }
 
 .contenedor {
   display: flex;
-  max-width: 1000px;
   margin: auto;
   flex-flow: row wrap; }
 
@@ -19,72 +16,73 @@ header {
   justify-content: space-between;
   flex-direction: row;
   flex-grow: 1;
-  flex-flow: row wrap;
-  height: 30px; }
+  flex-flow: row wrap; }
   header .header__div--one {
     flex-direction: row;
     background: #995210;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    width: auto; }
+    header .header__div--one input {
+      width: 10rem; }
+  header .header__div--two > div {
+    flex: auto; }
   header .header__div--two {
-    height: auto;
-    width: auto;
-    background: #0e440c;
+    width: 15rem;
     display: flex;
-    flex-flow: row wrap; }
+    flex-direction: row; }
     header .header__div--two .login--one {
       align-items: center;
       display: flex;
-      flex: 0.5;
       justify-content: center;
       border: 1px solid red; }
       header .header__div--two .login--one img {
-        height: 15px; }
+        height: 20px; }
     header .header__div--two .login--two {
       display: flex;
-      flex-flow: row wrap;
+      flex-direction: row;
       border: 1px solid red; }
       header .header__div--two .login--two .login-user {
         align-items: center;
         display: flex;
-        flex: 1;
-        justify-content: center;
-        margin: 0 0.2rem 0 0; }
+        justify-content: center; }
         header .header__div--two .login--two .login-user img {
-          height: 25px; }
+          height: 45px;
+          margin: 0 0.5rem 0 0.2rem; }
       header .header__div--two .login--two .login-datos {
         display: flex;
         justify-content: center;
-        flex-flow: column wrap;
+        flex-direction: column;
         text-align: left; }
         header .header__div--two .login--two .login-datos .login-datos--one {
           color: white;
-          font-size: 7pt; }
+          font-size: 12pt;
+          margin: 0; }
         header .header__div--two .login--two .login-datos .login-datos--two {
           color: #49d7d3;
-          font-size: 5pt; }
+          font-size: 8.85pt;
+          margin: 0; }
     header .header__div--two .login--three {
       align-items: center;
       display: flex;
-      flex: 0.5;
       justify-content: center;
       border: 1px solid red; }
       header .header__div--two .login--three .settings {
-        height: 10px;
+        height: 15px;
         margin: 0 0.2rem 0 0.5rem; }
       header .header__div--two .login--three .seleccion {
-        height: 4px;
+        height: 6px;
         margin: 0 0.5rem 0 0; }
 
 input {
   display: flex;
-  flex-grow: 1;
+  flex: 1;
   border-radius: 0.15rem;
   color: #8896b8;
   font-size: 5pt;
   border: none;
   width: auto;
-  height: 15px; }
+  height: 25px; }
 
 p {
   font-weight: lighter; }
@@ -95,29 +93,31 @@ img {
 button {
   background: transparent; }
 
-.div-one {
-  background-color: #2d3b3b;
-  display: flex;
-  display: inline-block;
-  flex-direction: column;
-  flex: 1;
-  height: auto;
-  justify-content: center;
-  position: absolute;
-  vertical-align: middle;
-  width: auto; }
+/*.div-one {
+    background-color: #2d3b3b;
+    display: flex;
+    display: inline-block;
+    flex-direction: column;
+    flex: 1;
+    height: auto;
+    justify-content: center;
+    position: absolute;
+    vertical-align: middle;
+    width: auto;
+}
 
 .div-two {
-  background-color: #65801b;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: auto;
-  height: 100px;
-  padding: 25px 20px;
-  margin: 25px;
-  display: inline-block;
-  vertical-align: middle;
-  flex-grow: 1; }
+    background-color: #65801b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: 100px;
+    padding: 25px 20px;
+    margin: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    flex-grow: 1;
+}*/
 
 /*# sourceMappingURL=index.css.map */
