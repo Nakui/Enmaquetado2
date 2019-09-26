@@ -96,6 +96,13 @@ body {
   </script>
      
   </body>
-  </html> 
-  
+  </html>   
 */
+
+var sidebar = document.getElementById("mySidebar");
+
+var side = document.getElementById("side");
+
+side.onclick = function() {
+  sidebar.style.display = "inline-block";
+}
