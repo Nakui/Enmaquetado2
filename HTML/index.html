@@ -35,11 +35,42 @@
             <i class="icon-users" style="cursor: pointer; color: #789494;"></i>
         </div>
     </div>
+    
+    <div  class="sidebar-two">
+        <div class="toogle">
+            <i class="fal fa-paper-plane" style="cursor: pointer; color: white; font-size:28px;"></i>
+        </div>
+        <div class="iconos">
+            <i class="fas fa-home" style="cursor: pointer; color: #01928d;"></i>
+        </div>
+        <div class="iconos">
+            <i class="icon-book" style="cursor: pointer; color: #789494;"></i>
+        </div>
+        <div class="iconos">
+            <i class="icon-calendar-empty" style="cursor: pointer; color: #789494;"></i>
+        </div>
+        <div class="iconos">
+            <i class="fad fa-copy" style="cursor: pointer; color: #789494;"></i>
+        </div>
+        <div class="iconos">
+            <i class="icon-users" style="cursor: pointer; color: #789494;"></i>
+        </div>
+    </div>
+
     <div class="contenedor">
         <header class="header">
-            <div class="header__div--one">
-                <i class="fas fa-search" style="position: absolute; right: 0; left: 26rem; color: #509c97; "></i>
+            <div class="header__div--one">                
                 <input type="text" placeholder="Busca estudiantes, padres o maestros aquí...">
+                <i class="fas fa-search" style="position: absolute; right: 0; left: 26rem; color: #509c97; cursor: pointer;"></i>
+            </div>
+            <div class="header__div-contraer">
+                    <i class="fal fa-bars" id="side" style="position: absolute; left: 1rem; color: white; cursor: pointer;"></i>
+                    <input type="text" placeholder="Busca estudiantes, padres o maestros aquí...">
+                    <i class="fas fa-search" style="position: absolute; right: 0; left: 25rem; color: #509c97; cursor: pointer;"></i>
+            </div>
+            <div class="header__div-contraer--two">
+                    <i class="fal fa-bars" onclick="side()" style="position: absolute; left: 1rem; color: white; cursor: pointer;"></i>                    
+                    <i class="fas fa-search" style="position: absolute; right: 0; left:4rem; color: #a8e9e7; cursor: pointer;"></i>
             </div>
             <nav class="header__div--two">
                 <div class="login--one">
@@ -62,11 +93,11 @@
                 </div>
             </nav>
         </header>
-        <div class="contenedor__div-one" style="color: #01928d; padding: 1.5rem 2.5rem;">
+        <div class="contenedor__div--one" style="color: #01928d; padding: 1.5rem 2.5rem;">
             <i class="icon-book" style="cursor: pointer;  font-size: 40px;"></i>
             <h1 class="contenedor__div-one--book" style="font-weight: lighter;">Mis Cursos</h1>
         </div>
-        <div class="contenedor__div-two">
+        <div class="contenedor__div--two">
             <div class="contenedor__div-two--opciones-one">
                 <label class="opciones__fuerte">Mis Cursos (500)</label>
             </div>
@@ -77,6 +108,8 @@
                 <p class="opciones__debil" style="color: #b0b0b0;"><b>Supervisados</b>(500)</p>
             </div>
         </div>
+    </div>
 </body>
-
+<script  src="../JAVASCRIPT/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </html>
