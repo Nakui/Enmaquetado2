@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/9c74db1b34.js" crossorigin="anonymous"></script>    
-    <link rel="stylesheet" href="../CSS/fontello.css"/>
+    <script src="https://kit.fontawesome.com/9c74db1b34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/fontello.css" />
     <link rel="stylesheet" href="../CSS/index.css" />
     <title>Mis Cursos</title>
 </head>
@@ -37,7 +37,7 @@
         </div>
         <div class="iconos">
             <i class="fas fa-sign-out-alt" style="cursor: pointer; color: #789494; margin-top: 600px;"></i>
-        </div>     
+        </div>
     </aside>
 
     <aside class="sidebar--two" id="mySidebar">
@@ -61,7 +61,7 @@
         </div>
         <div class="iconos">
             <i class="fas fa-sign-out-alt" style="cursor: pointer; color: #789494; margin-top: 600px;"></i>
-        </div>        
+        </div>
     </aside>
 
 
@@ -112,7 +112,7 @@
             <i class="icon-book" style="cursor: pointer;  font-size: 40px;"></i>
             <h1 class="contenedor__div-one--book" style="font-weight: lighter;">Mis Cursos</h1>
         </div>
-        <div class="contenedor__div--two" style="padding: 1rem  2.5rem  0 2.5rem;">
+        <div class="contenedor__div--two">
             <div class="contenedor__div-two--opciones-one">
                 <p class="opciones--one" style="color: #01928d; cursor: pointer;"><b>Mis Cursos</b>(500)</p>
             </div>
@@ -120,11 +120,27 @@
                 <p class="opciones--two" style="color: #8b8b8b; cursor: pointer;"><b>Supervisados</b>(500)</p>
             </div>
             <div class="contenedor__div-two--opciones-two">
-                <p class="opciones--three" style="color: #8b8b8b; cursor: pointer;"><b>Supervisados</b>(500)</p>
+                <p class="opciones--three" style="color: #8b8b8b; cursor: pointer;"><b>Todos</b>(500)</p>
             </div>
         </div>
-        <div class="contenedor_div--three" style="padding: 4rem  2.5rem 0 2.5rem;">
+        <div class="contenedor__div--three">
             <div class="caja--one">
+                <label class="dropdown">
+                    <div class="dd-button">Todos los niveles
+                    </div>
+                    <input type="checkbox" class="dd-input">
+                    <ul class="dd-menu">
+                        <li>Action</li>
+                        <li>Another action</li>
+                        <li>Something else here</li>
+                    </ul>
+                </label>
+                </label>
+
+                <!--  <button class="dropdown" type="button" style="border-radius: 10px; width: 200px;">
+                           <i class="far fa-chevron-down" style="padding:0  0 0.15rem 1rem;"></i>
+                    </button>    -->
+
                 <select>
                     <option>Todos los niveles</option>
                     <option>La primera opción</option>
@@ -140,38 +156,94 @@
             </div>
             <div class="caja--two">
                 <input type="text" placeholder="Busca el curso aquí...">
-                <i class="fas fa-search"
-                    style="position: relative; right: 2rem; color: #509c97; cursor: pointer;"></i>            
+                <i class="fas fa-search" style="position: relative; right: 2rem; color: #509c97; cursor: pointer;"></i>
             </div>
         </div>
-        <div class="contenedor_div--four">
-                <div class="task--one">
-                    <div class="part--one">
-                        <i class="far fa-bold" style="color: white; font-size: 6rem; padding: 0.4rem 1rem 0 0; opacity: 0.1;"></i>
-                    </div>
-                    <div class="part--two">
-                        <p style="font-size: 20pt; font-weight: lighter;">Pre Lectura</p>
-                        <p style="font-size: 10pt; font-weight: lighter; opacity: 0.75;">Nursery Preprimaria "A"</p>
-                    </div>
-                    <div class="part--three">
-                        <div class="fila--one">
-                            <i class="fal fa-paper-plane" style="cursor: pointer; color: white; opacity: 0.4;"></i>
-                        </div>
-                        <div class="fila--one">
-                            <i class="icon-users" style="cursor: pointer; color: white; opacity: 0.4;"></i>
-                        </div>
-                        <div class="fila--one">
-                            <i class="fad fa-copy" style="cursor: pointer; color: white; opacity: 0.4;"></i>
-                        </div>
-                        <div class="fila--one">
-                            <i class="icon-list" style="cursor: pointer; color: white; opacity: 0.4;"></i>
-                        </div>
-                    </div>
-                    <div class="part--four"></div>
+        <div class="contenedor__div--four">
+            <div class="task--one">
+                <div class="part--one">
+                    <i class="far fa-bold"
+                        style="color: white; font-size: 6rem; padding: 0.4rem 1rem 0 0; opacity: 0.1;"></i>
                 </div>
-                
-                <div class="task--two"></div>
-                <div class="task--three"></div>
+                <div class="part--two">
+                    <p style="font-size: 20pt; font-weight: lighter;">Pre Lectura</p>
+                    <p style="font-size: 10pt; font-weight: lighter; opacity: 0.75;">Nursery Preprimaria "A"</p>
+                </div>
+                <div class="part--three">
+                    <div class="fila--one">
+                        <i class="fal fa-paper-plane" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                    <div class="fila--one">
+                        <i class="icon-users" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                    <div class="fila--one">
+                        <i class="fad fa-copy" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                    <div class="fila--one">
+                        <i class="icon-list" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                </div>
+                <div class="part--four">
+                    <img src="../assets/gusano.png" alt="" style="height: 5rem; width: auto;">
+                    <p>No hay actividades<br>para hoy</p>
+                </div>
+            </div>
+            <div class="task--two">
+                <div class="part--one">
+                    <img src="../assets/superscript.svg"
+                        style="color: white; height: 6.3rem; width: auto; padding: 0.4rem 1rem 0 0; opacity: 0.156;">
+                </div>
+                <div class="part--two">
+                    <p style="font-size: 20pt; font-weight: lighter;">Matemática</p>
+                    <p style="font-size: 10pt; font-weight: lighter; opacity: 0.75;">Nursery Preprimaria "A"</p>
+                </div>
+                <div class="part--three">
+                    <div class="fila--one">
+                        <i class="fal fa-paper-plane" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                    <div class="fila--one">
+                        <i class="icon-users" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                    <div class="fila--one">
+                        <i class="fad fa-copy" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                    <div class="fila--one">
+                        <i class="icon-list" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                </div>
+                <div class="part--four">
+                    <img src="../assets/gusano.png" alt="" style="height: 5rem; width: auto;">
+                    <p>No hay actividades<br>para hoy</p>
+                </div>
+            </div>
+            <div class="task--three">
+                <div class="part--one">
+                    <i class="fad fa-puzzle-piece"
+                        style="color: white; font-size: 6rem; padding: 0.4rem 1rem 0 0; opacity: 0.1;"></i>
+                </div>
+                <div class="part--two">
+                    <p style="font-size: 20pt; font-weight: lighter;">Madurez Motora</p>
+                    <p style="font-size: 10pt; font-weight: lighter; opacity: 0.75;">Nursery Preprimaria "A"</p>
+                </div>
+                <div class="part--three">
+                    <div class="fila--one">
+                        <i class="fal fa-paper-plane" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                    <div class="fila--one">
+                        <i class="icon-users" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                    <div class="fila--one">
+                        <i class="fad fa-copy" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                    <div class="fila--one">
+                        <i class="icon-list" style="cursor: pointer; color: white; opacity: 0.4;"></i>
+                    </div>
+                </div>
+                <div class="part--four">
+                    <img src="../assets/gusano.png" alt="" style="height: 5rem; width: auto;">
+                    <p>No hay actividades<br>para hoy</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
