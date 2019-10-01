@@ -231,92 +231,91 @@ header {
       width: 15rem;
       border: 1px solid #d9d9d9; }
 
-.prueba {
+.todo {
   margin: auto;
-  background-color: #e9eeee;
-  left: 0;
-  right: 0; }
-
-.contenedor__div--four {
-  background-color: #e9eeee;
-  display: flex;
-  flex-flow: row wrap;
-  flex-grow: 4;
-  justify-content: space-around;
-  padding: 0 2rem 2rem 2rem;
-  max-width: 2000px; }
-  .contenedor__div--four .task {
-    width: 350px;
-    height: 350px;
-    margin-top: 4rem;
-    display: flex;
-    border-radius: 10px;
-    flex-wrap: wrap;
-    flex-direction: column; }
-    .contenedor__div--four .task .part--one {
+  background-color: #e9eeee; }
+  .todo .prueba {
+    background-color: #e9eeee;
+    max-width: 3000px; }
+    .todo .prueba .contenedor__div--four {
+      background-color: #e9eeee;
       display: flex;
-      position: relative;
-      width: 100%;
-      height: 90px;
-      justify-content: flex-end;
-      border-radius: 10px 10px 0 0; }
-    .contenedor__div--four .task .part--two {
-      display: flex;
-      position: absolute;
-      flex-direction: column;
-      width: auto;
-      height: 90px;
-      justify-content: center;
-      color: white; }
-      .contenedor__div--four .task .part--two p {
-        margin: 0 0 0 2rem; }
-    .contenedor__div--four .task .part--three {
-      display: flex;
-      flex-direction: row;
-      width: auto;
-      height: 30px;
-      justify-content: center;
-      color: #789494;
-      margin: 0;
-      z-index: 0; }
-      .contenedor__div--four .task .part--three .fila--one {
+      flex-wrap: wrap;
+      flex-grow: 1;
+      justify-content: space-around;
+      max-width: 3000px; }
+      .todo .prueba .contenedor__div--four .task {
+        width: 350px;
+        height: 350px;
+        margin-top: 4rem;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex: 1; }
-    .contenedor__div--four .task .part--four {
-      background-color: #ffffff;
-      display: flex;
-      flex-direction: row;
-      width: auto;
-      height: 230px;
-      justify-content: center;
-      border-radius: 0 0 10px 10px;
-      align-items: center; }
-      .contenedor__div--four .task .part--four p {
-        opacity: 0.2; }
-  .contenedor__div--four .task--one .part--one {
-    background-color: #36ad5b; }
-  .contenedor__div--four .task--one .part--three {
-    background-color: #36ad5b; }
-    .contenedor__div--four .task--one .part--three .fila--one {
-      border-top: 0.5px solid #41d570;
-      border-right: 0.5px solid #41d570; }
-  .contenedor__div--four .task--two .part--one {
-    background-color: #ee5252; }
-  .contenedor__div--four .task--two .part--three {
-    background-color: #ee5252; }
-    .contenedor__div--four .task--two .part--three .fila--one {
-      border-top: 0.5px solid #ff6565;
-      border-right: 0.5px solid #ff6565; }
-  .contenedor__div--four .task--three .part--one {
-    background-color: #845abd; }
-  .contenedor__div--four .task--three .part--three {
-    background-color: #845abd; }
-    .contenedor__div--four .task--three .part--three .fila--one {
-      border-top: 0.5px solid #a36fea;
-      border-right: 0.5px solid #a36fea; }
+        border-radius: 10px;
+        flex-wrap: wrap;
+        flex-direction: column; }
+        .todo .prueba .contenedor__div--four .task .part--one {
+          display: flex;
+          position: relative;
+          width: 100%;
+          height: 90px;
+          justify-content: flex-end;
+          border-radius: 10px 10px 0 0; }
+        .todo .prueba .contenedor__div--four .task .part--two {
+          display: flex;
+          position: absolute;
+          flex-direction: column;
+          width: auto;
+          height: 90px;
+          justify-content: center;
+          color: white; }
+          .todo .prueba .contenedor__div--four .task .part--two p {
+            margin: 0 0 0 2rem; }
+        .todo .prueba .contenedor__div--four .task .part--three {
+          display: flex;
+          flex-direction: row;
+          width: auto;
+          height: 30px;
+          justify-content: center;
+          color: #789494;
+          margin: 0;
+          z-index: 0; }
+          .todo .prueba .contenedor__div--four .task .part--three .fila--one {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex: 1; }
+        .todo .prueba .contenedor__div--four .task .part--four {
+          background-color: #ffffff;
+          display: flex;
+          flex-direction: row;
+          width: auto;
+          height: 230px;
+          justify-content: center;
+          border-radius: 0 0 10px 10px;
+          align-items: center; }
+          .todo .prueba .contenedor__div--four .task .part--four p {
+            opacity: 0.2; }
+      .todo .prueba .contenedor__div--four .task--one .part--one {
+        background-color: #36ad5b; }
+      .todo .prueba .contenedor__div--four .task--one .part--three {
+        background-color: #36ad5b; }
+        .todo .prueba .contenedor__div--four .task--one .part--three .fila--one {
+          border-top: 0.5px solid #41d570;
+          border-right: 0.5px solid #41d570; }
+      .todo .prueba .contenedor__div--four .task--two .part--one {
+        background-color: #ee5252; }
+      .todo .prueba .contenedor__div--four .task--two .part--three {
+        background-color: #ee5252; }
+        .todo .prueba .contenedor__div--four .task--two .part--three .fila--one {
+          border-top: 0.5px solid #ff6565;
+          border-right: 0.5px solid #ff6565; }
+      .todo .prueba .contenedor__div--four .task--three .part--one {
+        background-color: #845abd; }
+      .todo .prueba .contenedor__div--four .task--three .part--three {
+        background-color: #845abd; }
+        .todo .prueba .contenedor__div--four .task--three .part--three .fila--one {
+          border-top: 0.5px solid #a36fea;
+          border-right: 0.5px solid #a36fea; }
 
 .contenedor__div--four > div {
   margin: 0 1rem; }
